@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 # from django.utils.translation import ugettext_lazy as _
 
 
@@ -13,9 +14,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)emr%qeupd6sz$!)r7h1$f(jw5vyokz=$!-bk#gha(8%m#+rgh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['itoutsourcing.uz', 'http://itoutsourcing.uz', 'https://itoutsourcing.uz', 'http://www.itoutsourcing.uz', 'https://www.itoutsourcing.uz', 'www.itoutsourcing.uz']
 
 
 # Application definition
@@ -34,6 +35,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.locale.LocaleMiddleware', #locale
     'django.middleware.common.CommonMiddleware',
@@ -133,9 +135,12 @@ MODELTRANSLATION_LANGUAGES = ('en', 'uz')
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'static'
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static'
+# ]
+STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 MEDIA_ROOT = BASE_DIR/'media/'
 MEDIA_URL = 'media/'
