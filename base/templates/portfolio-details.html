@@ -1,0 +1,77 @@
+{% extends 'main.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">{% trans "Home" %}</a></li>
+          <li>{% trans "Portfolio Details" %}</li>
+        </ol>
+        <h2>{% trans "Portfolio Details" %}</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  {% if work.imag1 %}
+                  <img src="{{ MEDIA_URL }}{{ work.imag1.url }}" alt="">
+                  {% endif %}
+                </div>
+
+                <div class="swiper-slide">
+                  {% if work.imag2 %}
+                  <img src="{{ MEDIA_URL }}{{ work.imag2.url }}" alt="">
+                  {% endif %}
+                </div>
+                <div class="swiper-slide">
+                  {% if work.imag3 %}
+                  <img src="{{ MEDIA_URL }}{{ work.imag3.url }}" alt="">
+                  {% endif %}
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>{% trans "Project information" %}</h3>
+              <ul>
+                <li><strong>{% trans "Category" %}</strong>: {{ work.category }}</li>
+                <li><strong>{% trans "Client" %}</strong>: {{ work.client }}</li>
+                <li><strong>{% trans "Project date" %}</strong>: {{ work.project_date }}</li>
+                <li><strong>{% trans "Project URL" %}</strong>: <a href="{{work.project_url}}"> Open </a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>{{work.project_title}}</h2>
+              <p>
+                {{work.desc}}
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  {% endblock content %}

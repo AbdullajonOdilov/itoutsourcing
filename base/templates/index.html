@@ -1,0 +1,347 @@
+
+{% extends 'main.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="row">
+        <div class="col-xl-6">
+          <h1>{% trans 'Increase your business with ITIS' %}</h1>
+          <h2>{% trans 'We are a team of talented software engineers and designers making the best IT Services' %}</h2>
+          <a href="#contact" class="btn-get-started scrollto">{% trans 'Get Started' %}</a>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch">
+            <div class="content">
+              <h3>{% trans 'We provide the most valuable pleasure as it were' %}</h3>
+              <p>
+                {% trans "From implementing new business strategies to ultra-efficient work processes, ITIS is ready to tackle any challenge and put you on the path to success. We’ve helped our clients by delivering services that transform the way they do business." %}
+              </p>
+              <a href="#about" class="about-btn"><span>{% trans 'About us' %}</span> <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos-delay="100">
+                  <i class="bx bx-receipt"></i>
+                  <h4>{% trans 'Operations' %}</h4>
+                  <p>{% trans 'We can help you develop an unconstrained, end-to-end program to transform your operations.' %}</p>
+                </div>
+                <div class="col-md-6 icon-box"  data-aos-delay="200">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>{% trans "Business support" %}</h4>
+                  <p>{% trans "Providing other businesses with services including maintenance, repair and service, testing, rental, etc..; also includes: blueprinting business; equipment repair services" %}</p>
+                </div>
+                <div class="col-md-6 icon-box"  data-aos-delay="300">
+                  <i class="bx bx-images"></i>
+                  <h4>{% trans "Hard work will result" %}</h4>
+                  <p>{% trans "Success is the result of perfection, hard work, learning from failure, loyalty, and persistence." %}</p>
+                </div>
+                <div class="col-md-6 icon-box"  data-aos-delay="400">
+                  <i class="bx bx-shield"></i>
+                  <h4>{% trans 'Full outsourcing' %}</h4>
+                  <p>{% trans 'We take care of your specific IT function(s) with full responsibility for their quality and related risks.' %}</p>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>{% trans 'Happy Clients' %}</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>{% trans 'Projects' %}</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+              <p>{% trans 'Hours Of Support' %}</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+              <p>{% trans 'Hard Workers' %}</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg ">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>{% trans 'Our Services' %}</h2>
+          <p>{% trans 'We include a range of IT solutions such as web and mobile application development, software testing, digital marketing, and product management, tailored to meet the unique needs of our clients.' %}</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="icon-box" data-aos-delay="100">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#web">{% trans 'Web Development' %}</a></h4>
+
+              <p>{% trans 'Web development  involves designing, building, and maintaining websites for businesses and organizations.' %}</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos-delay="200">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">{% trans 'Testing' %}</a></h4>
+              <p>{% trans 'We control evaluating and validating software applications to ensure they meet quality standards and function properly.' %}</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos-delay="300">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">{% trans 'Product Management' %}</a></h4>
+              <p>{% trans 'Product management involves defining, developing, and launching software products that meet market needs and align with business goals.' %}</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos-delay="400">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">{% trans 'Mobile Development' %}</a></h4>
+              <p>{% trans 'Mobile Development is the process of building mobile applications for iOS and Android platforms using programming languages such as Kotlin, and Java.' %}</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos-delay="500">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="#">{% trans 'Graphic Design' %}</a></h4>
+              <p>{% trans "We can create visually appealing designs, such as logos, banners, and user interfaces, to enhance the user flow and convey the company's brand and message effectively" %}</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box" data-aos-delay="600">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="#">{% trans 'Telegram bot' %}</a></h4>
+              <p>{% trans 'We automate program that interacts with users via the Telegram messaging platform, providing various services and functionalities.' %}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>{% trans 'Portfolio' %}</h2>
+          <p>{% trans 'Our software development company is really proud of the great clients that we’ve had a chance to cooperate with. We enjoy long-term partnerships and each step during the creation of the best products within different niches, which are as follows:' %}</p>
+        </div>
+        <div class="row portfolio-container"  data-aos-delay="200">
+          {% for work in works %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              {% if work.image %}
+              <img src="{{ MEDIA_URL }}{{ work.image.url }}" class="img-fluid" alt="">
+              {% endif %}
+              <div class="portfolio-info">
+                <h4>{{work.title}}</h4>
+                <p>{{work.category}}</p>
+                <div class="portfolio-links">
+                  <a href="{% if work.image %}{{ MEDIA_URL }}{{ work.image.url }}{%else%}static/img/portfolio/portfolio-1.jpg{% endif %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{work.title}}"><i class="bx bx-plus"></i></a>
+                  <a href="{% url 'portfolio' pk=work.id %}" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>{% trans 'Testimonials' %}</h2>
+          <p>{% trans 'Testimonials are reviews from satisfied customers that provide evidence of the quality of IT services provided by a company.' %}</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            {% for client in supports %}
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  {% if client.image %}
+                  <img src="{{ MEDIA_URL }}{{ client.image.url }}" class="testimonial-img" alt="">
+                  {% endif %}
+                  <h3>{{client.full_name}}</h3>
+                  <h4>{{client.position}}</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    {{client.advice}}
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>{% trans 'Team' %}</h2>
+          <p>{% trans 'Our team consists of highly skilled and experienced professionals who are dedicated to delivering top-quality IT services to our clients.' %}</p>
+        </div>
+
+        <div class="row">
+          {% for team in teams %}
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                {% if team.image %}
+                <img src="{{MEDIA_URL}}{{team.image.url}}" class="img-fluid" alt="">
+                {% endif %}
+                <div class="social">
+
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>{{team.full_name}}</h4>
+                <span>{{team.position}}</span>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>{% trans 'Contact' %}</h2>
+          <h3>{% trans 'GET IN TOUCH' %}</h3>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>{% trans "Our Address" %}</h3>
+                  <p>{% trans 'Fergana city, Uzbekistan' %}</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-envelope"></i>
+                  <h3>{% trans "Email" %}</h3>
+                  <p>biznesrivoji@gmail.com<br>itis1info@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>{% trans 'Call Us' %}</h3>
+                  <p>+998 90 001 48 28 <br>+998 50 001 48 28</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="{% url 'index' %}" method="POST" role="form" class="php-email-form">{% csrf_token %}
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone number" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3" >
+                <div class="loading">Loading</div>
+
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">{% trans 'Send Message' %}</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  {% endblock content %}

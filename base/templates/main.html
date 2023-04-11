@@ -1,0 +1,249 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog Single - ITIS </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/itis1.png' %}" rel="icon">
+  <link href="{% static 'img/itis2.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <style>
+      .header-top__lang {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
+.header-top__lang-item {
+  position: relative;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2px 4px;
+  border-radius: 16px;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-top__lang-item:hover .lang-inner {
+  display: flex;
+}
+
+.header-top__lang-link {
+  color: #0d72d7;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 0 3px;
+}
+
+.lang-inner {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  box-shadow: 0 6px 8px -6px rgba(24, 39, 75, 0.12), 0 8px 16px -6px rgba(24, 39, 75, 0.08);
+}
+
+.lang-inner__item {
+  width: 100%;
+  display: flex;
+}
+
+.lang-inner__link {
+  color: #fff;
+  text-decoration: none;
+  color: #0d72d7;;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+.lang-inner__link:hover {
+  background-color: rgba(251, 193, 0, 0.2);
+}
+
+.lang-inner__link--none {
+  display: none;
+}
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo me-auto"><a href="">ITIS<span>.</span></a></h1> -->
+      <a class="logo me-auto" href="#">
+        <img class="logo-img" src="{% static 'img/itis2.png' %}" alt="logo" width="50px" style="object-fit: contain;">
+        <span style="
+        margin-left: -10px; font-size: 24px;">ITIS</span>
+      </a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="static/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">{% trans "Home" %}</a></li>
+          <li><a class="nav-link scrollto" href="#about">{% trans "About us" %}</a></li>
+          <li><a class="nav-link scrollto" href="#services">{% trans "Our Services" %}</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">{% trans "Team" %}</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'index' %}#contact">{% trans "Contact" %}</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="https://t.me/odilov_abdullajon" class="get-started-btn scrollto">{% trans "Join Us" %}</a>
+      <ul class="header-top__lang">
+        <li class="header-top__lang-item">
+          <i class="fa-solid fa-earth"></i>
+          <a class="header-top__lang-link header-top-lang-link" href="#">🇺🇸 En</a>
+          <i class="fa-solid fa-chevron-down"></i>
+          <ul class="lang-inner">
+            <li class="lang-inner__item">
+              <a class="lang-inner__link lang-inner__link--none js-lang-inner-link" href="#">🇺🇸 En</a>
+            </li>
+            <li class="lang-inner__item">
+              <a class="lang-inner__link js-lang-inner-link" href="#">🇺🇿 Uz</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header><!-- End Header -->
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ITIS<span>.</span></h3>
+            <p>
+
+              {% trans "Fergana city" %}<br>
+              {% trans "Uzbekistan" %}<br><br>
+              <strong>{% trans "Phone:" %}</strong> +998900014828<br>
+              <strong>Email:</strong> itis1info@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>{% trans "Useful Links" %}</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="">{% trans "Home" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">{% trans "About us" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">{% trans "Services" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Terms of service" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Privacy policy" %}</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4><a href="#services"></a>{% trans "Our Services" %}<a></a></h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Web Development" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Mobile Development" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Product Management" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Testing" %}</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">{% trans "Graphic Design" %}</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>{% trans "Join Our Newsletter" %}</h4>
+            <p>{% trans "Telegram channel" %}</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>ITIS 2023</span></strong>. {% trans "All Rights Reserved" %}
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+        </div>
+        <div class="social-links text-center text-md-end pt-3 pt-md-0">
+          <a href="https://t.me/odilov_abdullajon" class="telegram"><i class="bx bxl-telegram"></i></a>
+          <a href="http://fb.com/abdullajon.odilov.3" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="http://instagram.com/odilov_abdullajon_" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="http://linkedin.com/in/abdullajon-odilov" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="mailto:itis1info@gmail.com" class="linkedin"><i class="bx bxl-gmail"></i></a>
+        </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
